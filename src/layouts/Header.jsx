@@ -1,11 +1,11 @@
 import { useState } from "react";
 
 const Header = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
+    setIsMobileMenuOpen(!isMobileMenuOpen)
+  }
 
   return (
     <header className="bg-indigo-600 text-white p-4">
@@ -14,7 +14,7 @@ const Header = () => {
           <a href="/">TASKS</a>
         </h1>
         <nav className="hidden sm:block space-x-4">
-          <a href="/" className="hover:text-indigo-300">Home</a>
+          <a href="/" className="text-lg hover:text-indigo-300">Home</a>
         </nav>
 
         <button className="sm:hidden text-gray-300 bg-gray-600 hover:bg-gray-500 active:bg-gray-800 rounded-md p-2" onClick={toggleMobileMenu} aria-label="Toggle menu">
@@ -30,7 +30,7 @@ const Header = () => {
         </div>
       )}
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
