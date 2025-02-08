@@ -12,6 +12,7 @@ import Form   from './components/Form'
 import Home   from './pages/Home'
 import Create from './pages/Create'
 import Edit   from './pages/Edit'
+import Show   from './pages/Show'
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
         <Routes>
           <Route path='/'         element={<Home   />} />
           <Route path='/create'   element={<Create />} />
-          <Route path='/edit/:id' element={<Edit />} />
+          <Route path='/show/:id' element={<Show />}   />
+          <Route path='/edit/:id' element={<Edit />}   />
         </Routes>
       </Layout>
     </Router>

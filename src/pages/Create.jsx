@@ -14,7 +14,7 @@ const Create = () => {
         description: task.description
       })
 
-      navigate('/')
+      navigate(`/show/${id}`)
     } catch (error) {
       console.error('Error to create a task', error)
 
