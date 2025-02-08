@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
 
-function Form() {
-  const [title, setTitle ] = useState('');
-  const [description, setDescription ] = useState('');
+function Form({ onSubmit }) {
+  const [title, setTitle ] = useState('')
+  const [description, setDescription ] = useState('')
 
   const handleSubmit = (e) => {
-     e.preventDefault();
+     e.preventDefault()
 
-     console.log(title);
-
-     onSubmit({ title, description });
+     onSubmit({ title, description })
    };
 
   return (
@@ -36,7 +34,7 @@ function Form() {
         />
       </div>
 
-      <button type="submit" className='text-white bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-800 rounded-md p-2 px-6'>Save</button>
+      <button className='text-white bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-800 rounded-md p-2 px-6' type="submit" >Save</button>
     </form>
   )
 }
