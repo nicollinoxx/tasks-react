@@ -11,14 +11,16 @@ import Form   from './components/Form'
 /* pages */
 import Home   from './pages/Home'
 import Create from './pages/Create'
+import Edit   from './pages/Edit'
 
 function App() {
   return (
     <Router>
       <Layout>
         <Routes>
-          <Route path='/'       element={<Home   />} />
-          <Route path='/create' element={<Create />} />
+          <Route path='/'         element={<Home   />} />
+          <Route path='/create'   element={<Create />} />
+          <Route path='/edit/:id' element={<Edit />} />
         </Routes>
       </Layout>
     </Router>

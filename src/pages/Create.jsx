@@ -1,7 +1,11 @@
-import Form  from '../components/Form'
+import { useParams, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
+import Form  from '../components/Form'
+
+
 const Create = () => {
+  const navigate = useNavigate()
   const createTask = async (task) => {
 
     try {
@@ -10,7 +14,7 @@ const Create = () => {
         description: task.description
       })
 
-      return true;
+      navigate('/')
     } catch (error) {
       console.error('Error to create a task', error)
 
