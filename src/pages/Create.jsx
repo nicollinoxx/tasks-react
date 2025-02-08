@@ -1,5 +1,5 @@
-import axios from 'axios';
 import Form  from '../components/Form'
+import axios from 'axios'
 
 const Create = () => {
   const createTask = async (task) => {
@@ -12,7 +12,7 @@ const Create = () => {
 
       return true;
     } catch (error) {
-      console.error('Error to create a task', error);
+      console.error('Error to create a task', error)
 
       return false
     }

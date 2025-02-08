@@ -28,7 +28,7 @@ function Home() {
 
 
       {tasks.map((task, index) => (
-        <div className={`p-3 my-3 rounded-lg border-md transition-all ${index % 2 === 0 ? "bg-indigo-600 text-white" : "bg-gray-200"}`}  key={index} >
+        <div className={`p-3 my-3 rounded-lg border-md transition-all ${index % 2 === 0 ? "bg-gray-200" : "bg-indigo-600 text-white"}`}  key={index} >
           <TaskCard task={task} />
         </div>
       ))}

@@ -14,7 +14,7 @@ function Form({ onSubmit }) {
     <form onSubmit={handleSubmit}>
       <div className='mb-3'>
         <label className='block' htmlFor="title">Title</label>
-        <input className='rounded-md border-2 border-indigo-400 p-2 mt-2 w-full'
+        <input className='rounded-md border border-indigo-300 p-2 mt-2 w-full'
           type="text"
           id="title"
           name="title"
@@ -25,7 +25,7 @@ function Form({ onSubmit }) {
 
       <div className='mb-3'>
         <label className='block' htmlFor="description">Description</label>
-        <input className='rounded-md border-2 border-indigo-400 p-2 mt-2 w-full'
+        <textarea className='rounded-md border border-indigo-300 p-2 mt-2 w-full'
           type="text"
           id="description"
           name="description"
