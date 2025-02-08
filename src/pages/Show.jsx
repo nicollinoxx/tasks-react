@@ -25,7 +25,10 @@ function Show() {
     <div>
       <div className='flex items-center justify-between mx-auto mb-3'>
         <h2 className='text-3xl'>Task</h2>
-        <a className='text-white bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-800 rounded-md p-2 px-6' href={`/edit/${id}`}>Edit</a>
+        <div>
+          <a className='text-white bg-gray-600 hover:bg-gray-500 active:bg-gray-800 rounded-md p-2 px-6' href={`/tasks/${id}/edit`}>Edit</a>
+          <a className='text-white bg-red-600 hover:bg-red-500 active:bg-red-800 rounded-md p-2 px-6 ms-3' href={`/tasks/${id}/edit`}>Destroy</a>
+        </div>
       </div>
 
       <hr />

@@ -14,7 +14,9 @@ const Create = () => {
         description: task.description
       })
 
-      navigate(`/show/${id}`)
+      const createdTaskId = response.data.id
+
+      navigate(`/tasks/${createdTaskId}`)
     } catch (error) {
       console.error('Error to create a task', error)
 

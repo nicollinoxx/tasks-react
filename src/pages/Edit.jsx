@@ -30,7 +30,7 @@ const Edit = () => {
         description: updatedTask.description
       })
 
-      navigate(`/show/${id}`)
+      navigate(`/tasks/${id}`)
     } catch (error) {
       console.error('Erro ao editar a tarefa:', error)
       return false

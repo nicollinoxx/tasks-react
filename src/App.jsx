@@ -19,10 +19,10 @@ function App() {
     <Router>
       <Layout>
         <Routes>
-          <Route path='/'         element={<Home   />} />
-          <Route path='/create'   element={<Create />} />
-          <Route path='/show/:id' element={<Show />}   />
-          <Route path='/edit/:id' element={<Edit />}   />
+          <Route path='/'               element={<Home   />} />
+          <Route path='/tasks/new'      element={<Create />} />
+          <Route path='/tasks/:id'      element={<Show />}   />
+          <Route path='/tasks/:id/edit' element={<Edit />}   />
         </Routes>
       </Layout>
     </Router>
