@@ -4,7 +4,7 @@ This project is a task manager developed with **React** (frontend) and **Rails**
 
 ## 📂 Repositories
 
-🔹 **Frontend (React):** [tasks-react](https://github.com/your-user/taskmanager-frontend) \
-🔹 **Backend (Rails):** [tasks-rails](https://github.com/your-user/taskmanager-backend) 
+🔹 **Frontend (React):** [tasks-react](https://github.com/nicollinoxx/tasks-react) \
+🔹 **Backend (Rails):** [tasks-rails](https://github.com/nicollinoxx/tasks-rails)
 
 
