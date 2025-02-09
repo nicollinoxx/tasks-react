@@ -1,4 +1,4 @@
-#tasks-react
+# tasks-react
 
 This project is a task manager developed with **React** (frontend) and **Rails** (backend).
 
