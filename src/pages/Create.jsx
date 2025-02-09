@@ -4,7 +4,7 @@ import axios from 'axios'
 import Form  from '../components/Form'
 
 
-const Create = () => {
+function Create() {
   const navigate = useNavigate()
   const createTask = async (task) => {
 

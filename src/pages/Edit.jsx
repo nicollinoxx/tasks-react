@@ -5,7 +5,7 @@ import axios from 'axios'
 
 import Form from '../components/Form'
 
-const Edit = () => {
+function Edit() {
   const { id } = useParams()
   const [task, setTask] = useState({ title: '', description: '' })
   const navigate = useNavigate()
