@@ -1,3 +1,4 @@
+import { toast } from 'react-toastify'
 import { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 
@@ -30,10 +31,11 @@ function Edit() {
         description: updatedTask.description
       })
 
+      toast.success('Task updated successfully')
+
       navigate(`/tasks/${id}`)
-    } catch (error) {
-      console.error('Erro ao editar a tarefa:', error)
-      return false
+    } catch {
+      toast.error("Cannot edit task")
     }
   }
 

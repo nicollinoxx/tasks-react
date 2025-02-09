@@ -1,3 +1,4 @@
+import { toast } from 'react-toastify'
 import { useParams, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
@@ -14,13 +15,11 @@ function Create() {
         description: task.description
       })
 
-      const createdTaskId = response.data.id
+      toast.success('Task Created successfully')
 
-      navigate(`/tasks/${createdTaskId}`)
-    } catch (error) {
-      console.error('Error to create a task', error)
-
-      return false
+      navigate(`/tasks/${response.data.id}`)
+    } catch {
+      toast.error('Cannot create task')
     }
   }
 

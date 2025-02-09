@@ -1,3 +1,4 @@
+import { toast } from 'react-toastify'
 import { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 
@@ -16,7 +17,7 @@ function Show() {
         const response = await axios.get(`http://localhost:3000/tasks/${id}`)
         setTask(response.data)
       } catch (error) {
-        console.error("Erro ao buscar tarefas:", error)
+        toast.error('Cannot find task')
       }
     }
 
@@ -27,10 +28,11 @@ function Show() {
     try {
       await axios.delete(`http://localhost:3000/tasks/${id}`)
 
+      toast.success('Task destroyed task successfully')
+
       navigate('/')
-    } catch (error) {
-      console.error('Error to delete task:', error)
-      return false
+    } catch {
+      toast.error('Cannot destroy task')
     }
   }
 

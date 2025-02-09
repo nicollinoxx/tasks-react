@@ -1,3 +1,4 @@
+import { toast } from 'react-toastify'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 
@@ -11,8 +12,8 @@ function Home() {
       try {
         const response = await axios.get('http://localhost:3000/tasks')
         setTasks(response.data)
-      } catch (error) {
-        console.error("Erro ao buscar tarefas:", error)
+      } catch {
+        toast.error('Cannot find tasks')
       }
     }
 
